@@ -1,68 +1,34 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ChilliBean React Tech Test
 
-## Available Scripts
+Welcome to the ChilliBean React tech test.
 
-In the project directory, you can run:
+## Background
 
-### `yarn start`
+ChilliBean's main product is a service called ChilliPharm - which is like Google Drive for pharmaceutical files (primarily videos).  An uploaded file (most often a video, but sometimes images or documents) is called an "asset". A key part of the system is the ability to attach metadata to assets, a tagging system similar to photo tagging on sites like Facebook or Instagram.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Task
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Create a small React application that displays a set of assets (static images for simplicity) and their tags.  Users should be able to add, reorder and delete tags from existing assets. Tag order is not significant for any other part of the functionality in this example. Tags should be suggested from the provided data set where possible.
 
-### `yarn test`
+The displayed set of assets should also be filterable by any combination of user provided tags.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As a frontend task, the focus is less on the engineering complexity, and more on the UI and interactivity of the task.
 
-### `yarn build`
+## Resources
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+An initial data set is provided for you in `data.json`, as an example of the kind of data you could receive from a backend ChilliPharm service.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+You can see an example of a finished application that meets the spec hosted here: https://chillibean.github.io/react-tech-test/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Timeframe
 
-### `yarn eject`
+The task should take about 2.5 to 3 hours to complete. If it is taking longer, stop and submit your work.  Getting all the way through the task is less important than evidence of good working process and software development.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Notes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* Use of React Hooks over Class components is preferred, but not essential if you're not familiar with them yet.
+* Use any libraries or packages you like to assist your solution.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Submission
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Upload your solution to a private Github repository, add user `jasonsof` (https://github.com/jasonsof) as a collaborator, then email the link to `jason@chillibean.com`.

@@ -1,38 +1,58 @@
 .App {
   text-align: center;
+  min-height: 100vmax;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.product-search {
+  line-height: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.products-listing {
+  margin: 1rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.product-card {
+  width: 250px;
+  padding: 0.5rem 0.5rem 0.25rem;
+  border: 3px solid var(--alt-bg-color);
+  background: var(--alt-bg-color);
+  box-shadow: var(--shadow);
+  list-style: none;
+}
+
+.product-card h2 {
+  margin: 1rem 0;
+}
+
+.product-card .image {
+  background: var(--main-bg-color);
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid var(--main-text-color);
+}
+
+.tags {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  background-color: var(--hidden-text-color);
   color: white;
+  padding: 5px;
+  margin: 10px 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tag span {
+  margin-left: 5px;
 }
